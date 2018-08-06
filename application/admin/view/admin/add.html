@@ -1,0 +1,37 @@
+{extend name="public/base" /}
+{block name="title"}
+管理员列表
+{/block}
+{block name="fa1"}管理员管理{/block}
+{block name="fa2"}管理员列表{/block}
+{block name="breadCrumb"}
+<div class="page-body">
+    <a href="{:url('admin/admin/add')}" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i>&nbsp;管理员添加</a>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="widget">
+                <div class="widget-header">
+                    <span class="widget-caption">管理员列表</span>
+
+                </div>
+                <div class="widget-body">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>账号</th>
+                            <th>昵称</th>
+                            <th>邮箱</th>
+                            <th>状态</th>
+                            <th>权限</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
